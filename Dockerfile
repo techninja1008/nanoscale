@@ -10,4 +10,4 @@ ENTRYPOINT ./gateway -server=$SERVER -db-migrate=$DB_MIGRATE -store-migrate=$STO
   -proxy-code-timeout=$PROXY_CODE_TIMEOUT -proxy-http-timeout=$PROXY_HTTP_TIMEOUT -proxy-health-check-path="$HEALTH_CHECK_PATH" \
   -db-driver=$DB_DRIVER  -db-conn-string="$DB_CONN" -db-max-connections=$DB_MAX_CONN -store-type=$STORE_TYPE -store-conn-string="$STORE_CONN" -store-max-connections=$STORE_MAX_CONN \
   -remote-endpoint-docker-enabled=$DOCKER_ENABLED -docker-memory=$DOCKER_MEMORY -docker-cpu-shares=$DOCKER_CPU_SHARES -docker-host="$DOCKER_HOST" -docker-tls="$DOCKER_TLS" -docker-tls-cert-content="$DOCKER_TLS_CERT_CONTENT" -docker-tls-cacert-content="$DOCKER_TLS_CACERT_CONTENT" -docker-tls-key-content="$DOCKER_TLS_KEY_CONTENT"  \
-  -remote-endpoint-smtp-enabled=$SMTP_ENABLED -remote-endpoint-soap-enabled=$SOAP_ENABLED
+  -remote-endpoint-smtp-enabled=$SMTP_ENABLED -remote-endpoint-soap-enabled=$SOAP_ENABLED -stats-collect=$STATS_COLLECT -stats-migrate=$STATS_MIGRATE -stats-driver="$STATS_DRIVER" -stats-conn-string="$STATS_CONN_STRING" -stats-max-connections=$STATS_MAX_CONNECTIONS
