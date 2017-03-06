@@ -22,7 +22,4 @@ ENTRYPOINT ./gateway -server=$SERVER -db-migrate=$DB_MIGRATE -store-migrate=$STO
   -enable-push-broker=$ENABLE_PUSH_BROKER -push-broker=$PUSH_BROKER_HOST -push-broker-pub-port=$PUSH_BROKER_PUB_PORT -push-broker-sub-port=$PUSH_BROKER_SUB_PORT -push-broker-transport=$PUSH_BROKER_TRANSPORT -push-connect-timeout=$PUSH_CONNECTION_TIMEOUT -push-mqtt-uri=$PUSH_MQTT_URI \
   -job-enable=$JOBS_EXECUTE -job-enable-os-env=$JOBS_ENABLE_OS_ENV -job-code-timeout=$JOBS_CODE_TIMEOUT -job-code-error-lines=$JOBS_NUM_ERR_LINES -remote-endpoint-job-enabled=$JOBS_ENABLED -remote-endpoint-scrub-data=$REMOTE_ENDPOINT_SCRUB_DATA \
   -ws-heartbeat-interval=$WS_HEARTBEAT_INTERVAL -ws-write-deadline=$WS_WRITE_DEADLINE -admin-ui-path-prefix=$ADMIN_UI_PATH_PREFIX -stats-collect=$STATS_COLLECT -stats-migrate=$STATS_MIGRATE -stats-driver="$STATS_DRIVER" -stats-conn-string="$STATS_CONN_STRING" -stats-max-connections=$STATS_MAX_CONNECTIONS \
-  -repl-maximum-frame-size=$REPL_MAX_FRAME_SIZE -remote-endpoint-custom-function-enabled=$CUSTOM_FUNCTIONS_ENABLED -proxy-key-cache-size=$KEY_CACHE_SIZE -proxy-remote-endpoint-cache-size=$REMOTE_ENDPOINT_CACHE_SIZE \
-  -remote-endpoint-key-enabled=$KEYS_ENABLED \
-  -postgres-logging-enable=$POSTGRES_LOGGING_ENABLED -postgres-logging-migrate=$POSTGRES_LOGGING_MIGRATE -postgres-logging-conn-string="$POSTGRES_LOGGING_CONN_STRING" -postgres-logging-max-connections=$POSTGRES_LOGGING_MAX_CONNECTIONS \
-  -postgres-logging-delete-after=$POSTGRES_LOGGING_DELETE_AFTER
+  -remote-endpoint-key-enabled=$KEYS_ENABLED
